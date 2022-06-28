@@ -1,9 +1,10 @@
 import React from 'react'
-
+import Connection from "./Connection"
 function Home() {
     return (
       <>
-            <div>Home Page</div>            
+            <div>Home Page</div> 
+            <Connection/>           
       </>
 
   )
