@@ -1,6 +1,6 @@
 import React from 'react'
 import Connection from "./Connection";
-import Teleoperation from './Teleoperation';
+// import Teleoperation from './Teleoperation';
 import { Row, Col, Container, Button } from "react-bootstrap";
 
 function Home() {
@@ -16,7 +16,7 @@ function Home() {
 
         <Row>
             <Col>
-          <Teleoperation />
+          {/* <Teleoperation /> */}
             </Col>
             <Col>
               <h1> FOR MAP</h1>
