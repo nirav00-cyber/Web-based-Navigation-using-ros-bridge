@@ -29,9 +29,11 @@ function Connection() {
             {
                  try
                 {
-                ros.connect("ws://" + Config.ROSBRIDGE_SERVER_IP + ":" + Config.ROSBRIDGE_SERVER_PORT);
+                     ros.connect("ws://" + Config.ROSBRIDGE_SERVER_IP + ":" + Config.ROSBRIDGE_SERVER_PORT);
+                     setIsConnected(true);
                  } catch (err)
-                {
+                 {
+                     setIsConnected(false);
                     console.log("error while connecting");
                 }
             }, 3000);
@@ -39,9 +41,11 @@ function Connection() {
             })
             try
             {
-            ros.connect("ws://" + Config.ROSBRIDGE_SERVER_IP + ":" + Config.ROSBRIDGE_SERVER_PORT);
+                ros.connect("ws://" + Config.ROSBRIDGE_SERVER_IP + ":" + Config.ROSBRIDGE_SERVER_PORT);
+                setIsConnected(true);
             } catch (err)
             {
+                setIsConnected(false);
                 console.log("error while connecting");
             }
         }
